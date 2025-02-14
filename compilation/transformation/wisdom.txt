@@ -1,0 +1,1 @@
+gcc -c transformation.c; gcc main.c transformation.o; ./a.out

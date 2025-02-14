@@ -1,0 +1,3 @@
+gcc -c maths.c
+
+gcc main.c -L: maths.o
