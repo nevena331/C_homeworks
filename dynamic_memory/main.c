@@ -66,9 +66,10 @@ int main(){
             case 2: grades_count = remove_last_grade(grades, grades_count);break;
             case 3: print_grades(grades, grades_count);break;
             case 4: printf("average grade: %.2f\n", avg_grade(grades, grades_count));break;
-            case 5: return 0; break;
+            case 5: free(grades);return 0; break;
             default: printf("invalid option number. Try again\n");break;
         }
     }
+    free(grades);    
     return 0;
 }
